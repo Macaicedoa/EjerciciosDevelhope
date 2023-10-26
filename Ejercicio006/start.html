@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>¡Regístrate!</h1>
+    <form action="">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" value="" required>
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" value="" required>
+      <br><br>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="example@email.com" required><br>
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password" placeholder="***" required><br>
+      <br><br>
+      <label for="dob">Fecha de Nacimiento</label>
+      <input type="date"id="dob" name="dob" required>
+      <label for="telf">Teléfono</label>
+      <input type="tel"id="telf" name="telf" pattern="[0-9]" required>
+      <br><br>
+      <input type="radio" id="free-plan" name="plan">
+      <label for="free-plan">Free Plan</label>
+      <input type="radio" id="paid-plan" name="plan">
+      <label for="paid-plan">3 Plans for 9.99</label>
+      <input type="radio" id="pro-plan" name="plan">
+      <label for="pro-plan">Pro plan</label>
+      <br>
+      <h4>Información de pago</h4>
+      <input type="number" id="cardnumber" name="cardnumber" value="" placeholder="0000-0000-0000-0000" required>
+      <label for="cardnumber">Número de tarjeta de crédito</label>
+      <input type="text" id="cvc" name="cvc" value="" placeholder="000" required>
+      <label for="cvc">cvc</label>
+      <input type="month" id="exp-date" name="exp-date" value="" min="2023-10" required>
+      <label for="exp-date">Fecha de caducidad</label>
+      <br><br>
+      <h4>Dirección de facturación</h4>
+      <label for="calle">Calle</label>
+      <input type="text" id="calle" name="calle" value="" required>
+      <label for="c-numero">Número</label>
+      <input type="text" id="c-numero" name="c-numero" value="" pattern="[0-9][A-Z]" required>
+      <label for="puerta">Puerta</label>
+      <input type="text" id="puerta" name="puerta" value="" required>
+      <label for="c-postal">Código Postal</label>
+      <input type="text" id="c-postal" name="c-postal" value="" pattern="[0-9]" required>
+      <br><br>
+      <label for="c-numero">Enviar</label>
+      <input type="button" id="calle" name="calle" value="Enviar" required>
+      
+    </form>
+  </body>
+</html>
